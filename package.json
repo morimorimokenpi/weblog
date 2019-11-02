@@ -1,0 +1,19 @@
+{
+  "name": "weblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morimorimokenpi/weblog.git"
+  },
+  "author": "morimorimokenpi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morimorimokenpi/weblog/issues"
+  },
+  "homepage": "https://github.com/morimorimokenpi/weblog#readme"
+}
