@@ -4,6 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "gulp": "gulp",
+    "build-dev": "export NODE_ENV=development && gulp",
+    "build-prod": "export NODE_ENV=production && gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +18,18 @@
   "bugs": {
     "url": "https://github.com/morimorimokenpi/weblog/issues"
   },
-  "homepage": "https://github.com/morimorimokenpi/weblog#readme"
+  "devDependencies": {
+    "del": "^5.1.0",
+    "eslint": "^6.6.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "require-dir": "^1.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  }
 }
