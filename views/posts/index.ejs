@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Welcome Page</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <%- include("../_share/stylesheets.ejs") %>
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+  </head>
+  <body>
+<%- include("../_share/navbar.ejs") %>
+<main role="main" class="container">
+
+  <div class="border-bottom mt-5 mb-5">
+    <h1><%= title %></h1>
+  </div>
+  <dl class = "row mt-5 mb-5">
+    <dt class = "col-3">公開日:</dt>
+    <dd class = "col-9"><%= published.toLocaleString() %></dd>
+    <dt class = "col-3">著者:</dt>
+    <dd class = "col-9"><%= authors %></dd>
+    <dt class = "col-3">キーワード:</dt>
+    <dd class = "col-9"><% keywords %></dd>
+  </dl>
+  <p class="lead"><%= content %></p>
+
+</main><!-- /.container -->
+  <%- include("../_share/javascripts.ejs") %>
+  </body>
+</html>
